@@ -1,0 +1,69 @@
+/*{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "E:\\Program Files (x86)\\MinGW\\bin\\g++.exe",
+            "compilerArgs": [
+                "-g",
+                "-Wall",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+                "${filename}"
+            ]
+        }
+    ],
+    "version": 4
+}*/{
+    "configurations": [
+        {
+            "name": "Win32",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${workspaceFolder}",
+                "E:\\Program Files (x86)\\MinGW/lib\\gcc\\mingw32\\6.3.0\\include\\c++",
+                "E:\\Program Files (x86)\\MinGWlib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32",
+                "E:\\Program Files (x86)\\MinGWlib\\gcc\\mingw32\\6.3.0\\include\\c++\\backward",
+                "E:\\Program Files (x86)\\MinGWlib\\gcc\\mingw32\\6.3.0\\include",
+                "E:\\Program Files (x86)\\MinGW/include",
+                "E:\\Program Files (x86)\\MinGWlib\\gcc\\mingw32\\6.3.0\\include-fixed"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__GNUC__=6",
+                "__cdecl=__attribute__((__cdecl__))"
+            ],
+            "browse": {
+                "path": [
+                    "E:\\Program Files (x86)\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include",
+                    "E:\\Program Files (x86)\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include-fixed",
+                    "E:\\Program Files (x86)\\MinGW\\include\\*"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "compilerPath": "E:\\Program Files (x86)\\MinGW\\bin\\g++.exe",
+            "compilerArgs": [
+                "-g",
+                "-Wall",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+                "${filename}"
+            ]
+        }
+    ],
+    "version": 4
+}
