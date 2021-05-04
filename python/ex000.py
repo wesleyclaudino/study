@@ -1,8 +1,8 @@
 # família teste = Jucera Cleiton Julinha Paulinho
 # idades teste = 50 60 24 22
 
-#import pandas as pd
-#import numpy as np
+import pandas as pd
+import numpy as np
 
 nome = []
 
