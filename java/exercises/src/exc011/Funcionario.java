@@ -6,7 +6,7 @@ public class Funcionario {
 	private double salario;
 	
 	public double getBonificacao() {
-		return this.salario + this.salario * 0.1;
+		return this.salario + (this.salario * 0.1);
 	}
 	
 	public String getNome() {

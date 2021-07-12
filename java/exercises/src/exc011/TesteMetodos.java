@@ -16,16 +16,18 @@ public class TesteMetodos {
 		System.out.println("Agora com a bonificação seu salário é de: " + func1.getBonificacao());
 		
 		//Teste de Gerente
-		Gerente gen1 = new Gerente();
-		gen1.setNome("Primeiro Gerente");
-		gen1.setCpf("111.111.111-11");
-		gen1.setSalario(5000);
+		Gerente g1 = new Gerente();
+		g1.setNome("Primeiro Gerente");
+		g1.setCpf("111.111.111-11");
+		g1.setSalario(5000);
 		
-		System.out.println("O salário de " + gen1.getNome() + " é de: " + gen1.getSalario());
+		System.out.println("O salário de " + g1.getNome() + " é de: " + g1.getSalario());
 		
-		gen1.setSenha(40028922);
-		boolean autentica = gen1.autenticacao(40028922);
+		g1.setSenha(40028922);
+		boolean autentica = g1.autenticacao(40028922);
 		
 		System.out.println(autentica);
+		
+		System.out.println("Com a bonificação, o salário do gerente " + g1.getNome() + " é de: " + g1.getBonificacao());
 	}
 }
