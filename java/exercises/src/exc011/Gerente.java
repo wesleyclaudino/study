@@ -1,21 +1,9 @@
 package exc011;
 
-public class Gerente extends Funcionario {
-	private int senha;
+public class Gerente extends FuncionarioAutenticavel {
 	
-	public boolean autenticacao(int senha){
-		if(senha == this.senha){
-			return true;
-		}else {
-			return false;
-		}
-	}
-	
-	public void setSenha(int senha) {
-		this.senha = senha;
-	}
-	
+	@Override
 	public double getBonificacao() {
-		return super.getBonificacao() + (super.getSalario() / 2);
+		return super.getSalario() + (super.getSalario() / 2);
 	}
 }
