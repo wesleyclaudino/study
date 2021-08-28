@@ -10,7 +10,14 @@ public class Fluxo {
 
     private static void metodo1() {
         System.out.println("Inicio do metodo1");
-        metodo2();
+        try {
+        	metodo2();
+        } catch(ArithmeticException | NullPointerException ex) {
+        	ex.printStackTrace();
+        	String msg = ex.getMessage();
+        	System.out.println(msg);
+        }
+        
         System.out.println("Fim do metodo1");
     }
 
@@ -18,7 +25,13 @@ public class Fluxo {
         System.out.println("Inicio do metodo2");
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
+            int a = i/0;
+            Fluxo f = null;
+            f.metodoTeste();
         }
         System.out.println("Fim do metodo2");
+    }
+    void metodoTeste() {
+    	System.out.println("Teste");
     }
 }
