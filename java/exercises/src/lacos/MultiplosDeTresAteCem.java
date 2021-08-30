@@ -1,4 +1,4 @@
-package exc010;
+package lacos;
 
 public class MultiplosDeTresAteCem {
 	public static void main(String[] args) {

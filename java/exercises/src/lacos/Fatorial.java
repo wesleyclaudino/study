@@ -1,4 +1,4 @@
-package exc010;
+package lacos;
 
 public class Fatorial {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package exc011;
+package orientacao_a_objetos;
 
 public class SistemaInterno {
 	private int senhaDoCofre = 40028922;

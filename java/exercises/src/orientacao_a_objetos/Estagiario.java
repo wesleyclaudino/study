@@ -1,4 +1,4 @@
-package exc011;
+package orientacao_a_objetos;
 
 public class Estagiario extends Funcionario implements Autenticavel {
 	public int senhaDoCofre;
