@@ -1,6 +1,6 @@
 package excecoes;
 
-public class Fluxo {
+public class FluxoComError {
 
     public static void main(String[] args) {
         System.out.println("Inicio do main");
@@ -12,7 +12,7 @@ public class Fluxo {
         System.out.println("Inicio do metodo1");
         try {
         	metodo2();
-        } catch(ArithmeticException | NullPointerException | UncheckedException | CheckedException ex) {
+        } catch(ArithmeticException | NullPointerException | UncheckedException ex) {
         	ex.printStackTrace();
         	String msg = ex.getMessage();
         	System.out.println(msg);
@@ -21,14 +21,9 @@ public class Fluxo {
         System.out.println("Fim do metodo1");
     }
 
-    private static void metodo2() throws CheckedException {
+    private static void metodo2() {
         System.out.println("Inicio do metodo2");
-        metodo3();
-        throw new UncheckedException("Exceção Jogada");
-    }
-    
-    private static void metodo3() throws CheckedException {
-    	System.out.println("Inicio do metodo3");
-    	throw new CheckedException();
+        metodo2();
+        System.out.println("Fim do metodo2");
     }
 }
